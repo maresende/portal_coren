@@ -1,0 +1,16 @@
+main > div {
+	box-shadow: 0px 0px 15px #0004;
+	background-color: white;
+	margin-left: auto;
+}
+
+.content{
+	margin-left: 100px;
+	width: 300px;
+}
+
+@media(max-width: 768px) {
+	.content {
+		margin-left: 15px;
+	}
+}
