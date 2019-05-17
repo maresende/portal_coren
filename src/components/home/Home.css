@@ -11,6 +11,11 @@ main > div {
     width: 220%; /* value of your choice which suits your alignment */
 }
 
+.superior-nav{
+   width: 130%;
+	   padding-left: 10px;
+   padding-bottom: 20px;
+}
 
 @media(max-width: 768px){
 	.center_div {	

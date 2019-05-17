@@ -52,6 +52,9 @@ aside.menu-area {
 
 main.content {
 	grid-area: content;
+	position: relative;
+	left: 15px;
+	
 }
 
 footer.footer {

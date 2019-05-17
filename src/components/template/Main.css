@@ -5,8 +5,15 @@ main > div {
 }
 
 .content{
+	padding-top:0px;
 	margin-left: 100px;
 	width: 300px;
+}
+
+.faixa{
+	background-color: black;
+	border: 15px;
+	margin-right: 0px;
 }
 
 @media(max-width: 768px) {
