@@ -8,13 +8,23 @@ main > div {
 }
 
 .center_div{
-    width: 220%; /* value of your choice which suits your alignment */
 }
 
+input {
+	width: 100%;
+}
+
+.ploc{
+	width: 100%;
+	padding:10px;
+}
 .superior-nav{
-   width: 130%;
-	   padding-left: 10px;
-   padding-bottom: 20px;
+   margin: auto;
+   padding:10px;
+}
+
+.btn-group {
+	margin:	auto;
 }
 
 @media(max-width: 768px){

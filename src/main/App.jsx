@@ -15,6 +15,5 @@ export default props =>
 	<div className="app">
 		<Logo />
 		<Home />
-		<Footer />
 	</div>
 	</HashRouter>

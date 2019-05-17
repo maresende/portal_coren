@@ -1,11 +1,11 @@
 aside.logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	margin: center;
+	height: 100%;
 }
 
 aside.logo img{
 	padding: 0px 15px;
-	width: 350px;
+	height:100%;
+	max-width: 100%;
 }
 

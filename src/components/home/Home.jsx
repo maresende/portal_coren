@@ -281,7 +281,7 @@ voltacpfinvalido(event){
 				</ButtonGroup>
 			</div>	
 			<div className="row center_div">
-				<div className="col-12 col-md-6">
+				<div className="ploc">
 					<div className="form-group">
 						<label>Documento</label>
 						<input type="text" className="form-control"
@@ -293,7 +293,7 @@ voltacpfinvalido(event){
 				</div>
 			</div>
    			<div className="row center_div">
-				<div className="col-12 col-md-6">
+				<div className="ploc">
 					<div className="form-group">
 						<label>Nascimento</label>
 						<input type="text" className="date form-control" 
@@ -334,7 +334,7 @@ voltacpfinvalido(event){
 				</ButtonGroup>
 			</div>	
 			<div className="row center_div">
-				<div className="col-12 col-md-6">
+				<div className="ploc">
 					<div className="form-group">
 						<label>Login</label>
 						<input type="text" className="form-control"
@@ -346,7 +346,7 @@ voltacpfinvalido(event){
 				</div>
 			</div>
    			<div className="row center_div">
-				<div className="col-12 col-md-6">
+				<div className="ploc">
 					<div className="form-group">
 						<label>Senha</label>
 						<input type="password" className="form-control" 
