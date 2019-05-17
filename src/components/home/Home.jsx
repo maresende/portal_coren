@@ -17,7 +17,8 @@ const initialState = {
 	funcionario: false,
 	funcionario_errado: false,
 	login_errado: false,
-	cpfinvalido: false
+	cpfinvalido: false,
+	espera: false
 }
 
 window.global_ip = 666;
@@ -190,11 +191,9 @@ export default class USerCrud extends React.Component {
 					console.log(resp.data)
 					//this.setState({ user: initialState.user, list})
 					if (resp.data.length === 0) {
-						document.location.assign("https://www.corenmg.gov.br");
-						console.log('Usuario inexistente')
+						this.setState({espera:false})
 					} else {
-						document.location.assign("https://www.corenmg.gov.br");
-						console.log('Usuario encontrado')
+						this.setState({espera:false})
 					}
 				})
 			.catch( (error) => {
@@ -259,9 +258,16 @@ voltainiciofuncionario(event){
 	this.setState({funcionario_errado:false})
 }
 
+continuanav(event){
+	this.setState({espera:false})
+	document.location.assign("https://www.corenmg.gov.br");
+}
+
 voltainiciologin(event){
 	this.setState({login_errado: false})
 }
+
+
 
 voltacpfinvalido(event){
 	this.setState({cpfinvalido: false})
@@ -378,8 +384,26 @@ voltacpfinvalido(event){
    render() {
 	console.log('state is')
 	console.log(this.state)
+
+	if(this.state.espera){
+				return(
+				<Main>
+					<p>  
+						Login Realizado!
+					</p>
+					<div className="row">
+						<div className="col-12 d-flex justify-content-end" onClick={e => this.continuanav(e)}>
+							<button className="btn btn-primary">
+								Continuar
+							</button>
+						</div>
+					</div>	
+
+				</Main>
+				)
 	
-	if(!this.state.funcionario){
+	}
+	else if(!this.state.funcionario){
 		if(this.state.cpfinvalido){
 				return (
 					<Main>
